@@ -1,0 +1,136 @@
+
+
+
+.scriptpage-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--color-darker-1);
+}
+
+.scriptpage-section-1{
+    display: flex;
+    position: relative;
+    
+}
+.scriptpage-section-1,
+.scriptpage-section-2{
+    padding: 1em;
+
+    background-color: var(--color-darker-2);
+}
+.scriptpage-sub-section-1{
+    flex: 1 1 200%;
+    padding: 1em;
+    z-index: 2;
+}
+.scriptpage-game-title,
+.scriptpage-credits-title,
+.scriptpage-description-title{
+    font-size: 1em;
+    color: var(--color-dark);
+}
+.scriptpage-scriptname{
+    font-size: 2em;
+    text-align: center;
+    background: linear-gradient(to right, #ffaa00 0%, #dd4c4f 100%);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.scriptpage-scriptname:hover{
+    
+    animation: text-hovering 2s ease-in-out infinite;
+
+}
+.scriptpage-game,
+.scriptpage-credits,
+.scriptpage-description{
+    font-size: 0.75em;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-lighter-1);
+}
+
+
+
+
+.scriptpage-image{
+    flex: 1 1 50%;
+    max-width: 50%;
+    z-index: 1;
+    animation: Image-breathing 3s ease 2s infinite;
+}
+
+
+.scriptpage-how-to-title,
+.scriptpage-scriptbox-title{
+    font-size: 1.5em;
+    background-color: var(--color-lighter-1);
+    color: var(--color-darker-1);
+}
+.scriptpage-how-to-step{
+    text-decoration: none;
+    text-align: left;
+    list-style-type:decimal;
+    margin: 0em 1em;
+    cursor: default;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2em;
+    transition: all 200ms ease;
+}
+.scriptpage-how-to-step:hover{
+font-size: 1em;
+color: var(--color-accepted);
+}
+
+
+
+.scriptpage-scriptbox{
+    font-family: monospace;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em;
+    word-break:break-all;
+    color: var(--color-accepted);
+    background-color: var(--color-darker-2);
+    margin: 1em;
+}
+.scriptpage-scriptbox:hover{
+    background-color: var(--color-light);
+    color: var(--color-darker-2);
+    
+}
+
+@keyframes Image-breathing {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.005);
+    }
+    
+}
+
+@keyframes text-hovering{
+    0%, 100%{
+        transform: translateY(0%);
+        filter: hue-rotate(0deg);
+  
+    }
+    50%{
+        
+        transform: translateY(-7%);
+        filter: hue-rotate(360deg);
+  
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .scriptpage-section-1{
+        flex-direction: column;
+        
+    }
+    .scriptpage-image{
+        max-width: 100%;
+    }
+        
+  }

@@ -1,0 +1,134 @@
+
+
+.scripts-sub-container{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-overflow: ellipsis;
+    margin: 1em;
+    gap:1em;
+    
+}
+.scripts-sub-container div{
+    animation: intro 500ms ease 1 ;
+}
+
+@keyframes intro {
+    0%{
+        opacity: 0;
+        transform: translateX(-10px) rotateZ(2deg);
+    }
+    50%{
+        transform: translateX(-5px) rotateZ(-2deg);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) rotateZ(0deg);
+
+    }
+
+    
+}
+.scripts-title{
+    font-size: 1.1em;
+    font-weight: 800;
+    background-color: var(--color-lighter-1);
+    color: var(--color-darker-1);
+   /* position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+ */
+}
+.scripts-pagination{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    padding: 1em;
+}
+
+
+.scripts-pagination-prev,
+.scripts-pagination-next{
+
+    flex: 1 1 50%;
+    background-color: var(--color-darker-2);
+    cursor: pointer;
+    transition: all 100ms ease ;
+}
+.scripts-pagination-prev{
+    border:2px solid var(--color-denied);
+    color:var(--color-denied);
+    visibility:hidden;
+    
+}
+.scripts-pagination-curr{
+    flex: 1 1 100%;
+    font-size: 1.5em;
+}
+.scripts-pagination-next{
+    border:2px solid var(--color-accepted);
+    color:var(--color-accepted);
+}
+.scripts-pagination-prev:hover{
+    border:2px solid var(--color-darker-2);
+    color: var(--color-darker-2);
+    background-color:var(--color-denied);
+
+}
+
+.scripts-pagination-next:hover{
+    border:2px solid var(--color-darker-2);
+    color: var(--color-darker-2);
+    background-color:var(--color-accepted);
+
+}
+.scripts-pagination-next:active{
+    transform: translateX(10px);
+    opacity: 0;
+}
+.scripts-pagination-prev:active{
+    transform: translateX(-10px);
+    opacity: 0;
+
+}
+
+
+/*Change the column to 1 when screen has low width ie a mobile screen*/
+
+@media only screen and (min-width: 0px) {
+    .scripts-sub-container{
+        grid-template-columns: 1fr ;
+    }
+    .scripts-pagination{
+        width: 80%;
+    }
+        
+    
+}
+
+@media only screen and (min-width: 700px) {
+    .scripts-sub-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .scripts-pagination{
+        width: 50%;
+    }
+    
+        
+    
+}
+
+@media only screen and (min-width: 1900px) {
+    .scripts-sub-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .scripts-pagination{
+        width: 30%;
+    }
+        
+    
+}

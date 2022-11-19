@@ -1,0 +1,16 @@
+.notfound-main-container{
+    padding: 5%;
+}
+.notfound-title{
+    font-size: 2em;
+}
+.notfound-description{
+    color: var(--color-normal);
+}
+
+.notfound-home-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}

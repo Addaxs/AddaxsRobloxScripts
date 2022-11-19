@@ -1,0 +1,6 @@
+.button-main-container {
+  padding: 1em 1em;
+  background-color: var(--color-lighter-2);
+  color: var(--color-darker-1);
+  
+}

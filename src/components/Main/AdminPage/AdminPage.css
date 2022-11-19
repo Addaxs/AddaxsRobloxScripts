@@ -1,0 +1,70 @@
+
+
+.adminpage-title{
+    font-size: 2em;
+    font-weight: 800;
+    border-bottom: 1px solid var(--color-darker-1);
+}
+.adminpage-sub-container{
+    display: flex;
+    flex-direction: column;
+}
+.adminpage-sub-container-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+.adminpage-sub-container-item-title{
+    font-size: 1.5em;
+    width: 80%;
+    text-align: left;
+    padding: 6px;
+    color: var(--color-lighter-1);
+    border-bottom: 1px solid var(--color-darker-1);
+    background-color: var(--color-darker-2);
+}
+input::placeholder, textarea::placeholder{
+    color: var(--color-light);
+    text-align: center;
+}
+input ,textarea{
+    background-color: var(--color-darker-1);
+    border: none;
+    border-radius: 0px;
+    padding: 6px;
+    flex: 1 1 100%;
+    color: var(--color-lighter-1);
+    font-size: 1.5em;
+    width: 80%;
+    text-align: center;
+
+}
+input:focus, textarea:focus{
+    
+    outline:none;
+    border: 1px solid var(--color-dark);
+}
+.admin-page-submitBtn{
+    background-color: var(--color-lighter-1);
+    color: var(--color-darker-1);
+    padding: 1em;
+    font-size: 1.5em;
+    justify-self: center;
+}
+.admin-page-submitBtn:hover{
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--color-darker-1);
+    color: var(--color-lighter-1);
+    border-bottom: 1px solid var(--color-darker-1);
+
+}
+
+.admin-page-submitBtn:active{
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--color-darker-2);
+    color: var(--color-lighter-2);
+
+}

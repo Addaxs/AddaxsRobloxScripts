@@ -1,0 +1,6 @@
+.other-script-main-container {
+  flex: 1 1 75%;
+  padding: 1em;
+  background-color: var(--color-darker-2);
+  color: var(--color-lighter-1);
+}

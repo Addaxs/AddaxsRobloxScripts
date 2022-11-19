@@ -1,0 +1,12 @@
+
+
+.other-scripts-main-container{
+  background-color: var(--color-darker-2);
+  padding: 0.5em;
+}
+
+
+.other-scripts-title{
+  font-size: 1.25em;
+  font-weight: 800;
+}

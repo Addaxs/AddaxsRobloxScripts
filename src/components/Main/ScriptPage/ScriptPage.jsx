@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./ScriptPage.css";
 function ScriptPage(props) {
-  function removeSpaces(str) {
-    return str.replace(/\s/g, "");
-  }
+  // function removeSpaces(str) {
+  //   return str.replace(/\s/g, "");
+  // }
   const { id } = useParams();
   const currScript = props.scriptsArray[parseFloat(id)];
   useEffect(()=>{

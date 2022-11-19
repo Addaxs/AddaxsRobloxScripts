@@ -1,11 +1,10 @@
 import { Component } from "react";
 import "./Main.css";
-import { Routes, Route, useParams } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Scripts from "./Scripts/Scripts";
 import Community from "./Community/Community";
 import NotFound from "./NotFound/NotFound";
 import Home from "./Home/Home";
-import AdminPage from "./AdminPage/AdminPage";
 import ScriptPage from "./ScriptPage/ScriptPage";
 
 class Main extends Component {
